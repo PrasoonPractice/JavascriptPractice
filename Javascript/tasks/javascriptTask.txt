@@ -1,5 +1,3 @@
-Design a webpage for entry of employ information and parallaly display employ records on same page.
+This file will be updated whenever a new task is recieved:
 
-->form->submit->display
-
-=>e_id, E_name, e_designation, e_salary, e_marked
+No pending tasks.
