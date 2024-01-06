@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #464444;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #c9cb99;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Employee Information</h1>
+
+    <form id="employeeForm">
+        <label for="employeeId">Employee ID:</label>
+        <br>
+        <input type="text" id="employeeId" name="employeeId" required>
+        <br>
+        <label for="employeeName">Name:</label>
+        <br>
+        <input type="text" id="employeeName" name="employeeName" required>
+        <br>
+        <label for="employeeDesignation">Designation:</label>
+        <br>
+        <input type="text" id="employeeDesignation" name="employeeDesignation" required>
+        <br>
+        <label for="employeeSalary">Salary:</label>
+        <br>
+        <input type="number" id="employeeSalary" name="employeeSalary" required>
+        <br><br>
+        <button type="button" onclick="addEmployee()">Add Employee</button>
+        <br>
+    </form>
+
+    <table id="employeeTable">
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody id="employeeRecords">
+            <!-- Employee records will be displayed here dynamically -->
+        </tbody>
+    </table>
+
+    <script src="add.js"></script>
+
+</body>
+</html>

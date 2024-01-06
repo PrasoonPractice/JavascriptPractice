@@ -1,0 +1,5 @@
+Design a webpage for entry of employ information and parallaly display employ records on same page.
+
+->form->submit->display
+
+=>e_id, E_name, e_designation, e_salary, e_marked
