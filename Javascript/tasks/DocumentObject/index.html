@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object and it's Methods</title>
+    <style>
+        code {
+            background-color: #e2e3b2;
+            color: #41346c;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <script src="index.js"></script>
+    <h1>Hello</h1>
+    <p>This is a web page designed to create the examples for document object and it's methods.</p>
+    <h3>Document object</h3>
+    <p>When an HTML document is loaded into a web browser, it becomes a <b>document object</b>. <br>
+        The <b>document object</b> is the root node of the HTML document. <br>
+        The <b>document object</b> is a property of the window object. <br>
+        The <b>document object</b> is accessed with:<br>
+        <code>window.document</code> or just <code>document</code><br><br>
+        Click the button below to get the current <b>document object</b> in the console.<br>
+    </p>
+    <button id="doc" onclick="showDoc()" >Document object</button>
+
+    <h3>Document Object Methods</h3>
+    <ul type="circle">
+        <li><button id="docTag" onclick="showDocElementByTag()" >.getElementByTagName()</button>
+            <p>The <code>.getElementByTagName()</code> method returns a collection of all elements with a specified tag name.</p>
+        </li>
+        <li><button id="docClass" onclick="showDocElementByClass()" >.getElimentByClassName()</button>
+            <p class="example">The <code>.getElementByClassName()</code> method returns a collection of elements with a specified class name(s).</p>
+        </li>
+        <li><button id="docId" onclick="showDocElementById()" >.getElimentById()</button>
+            <p id="text" class="example" >The <code>.getElimentById()</code> method returns an element with a specified value or <code>null</code> if the element does not exist.<br>
+            It is one of the most common methods in the HTML DOM.<br>
+            It is used almost every time you want to read or edit an HTML element..</p>
+        </li>
+        <li><button id="docId" onclick="showDocElementByName()" >.getElimentByName()</button>
+            <p id="text1" class="example" name="description">The <code>.getElimentByName()</code> method returns the <b>first</b> element that matches based on id, classes, types, attributes, values of attributes etc..</p>
+        </li>
+        <li><button id="docQuery" onclick="showDocquerySelector()" >.querySelector()</button>
+            <p id="text2" class="example" name="description">The <code>.querySelector()</code> method returns the <b>first</b> element that matches based on id, classes, types, attributes, values of attributes etc..</p>
+        </li>
+        <li><button id="docQueryAll" onclick="showDocquerySelectorAll()" >.querySelectorAll()</button>
+            <p id="text3" class="example" name="description">The <code>.querySelectorAll()</code> method returns <b>all</b> the elements that matches based on id, classes, types, attributes, values of attributes etc..</p>
+        </li>
+    </ul>
+</body>
+</html>
