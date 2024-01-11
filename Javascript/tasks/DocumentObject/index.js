@@ -5,7 +5,7 @@ function showDoc(){
 
 function showDocElementByTag(){
     var docTag= document.getElementsByTagName("p");
-    for(var i = 2; i < docTag.length; i++){
+    for(var i = 0; i < docTag.length; i++){
         docTag[i].style.background = "#93e9f1";
     }
     console.log(docTag);
@@ -26,7 +26,7 @@ function showDocElementById(){
     console.log(docId);
 }
 
-function showDocElementByName(){
+function showDocElementsByName(){
     var docName = document.getElementsByName("description");
     for(var i = 0; i < docName.length; i++){
         docName[i].style.fontSize = "125%";
@@ -51,7 +51,7 @@ function showDocquerySelectorAll(){
     var docQueryAllClass = document.querySelectorAll(".example");
     var docQueryAllId = document.querySelectorAll("#text3");
 
-    for(var i = 1; i < docQueryAllTag.length; i++){
+    for(var i = 0; i < docQueryAllTag.length; i++){
         docQueryAllTag[i].style.background = "#334143";
     }
     for(i = 0; i < docQueryAllClass.length; i++){
@@ -63,4 +63,3 @@ function showDocquerySelectorAll(){
 
     console.log(docQueryAllTag,docQueryAllClass,docQueryAllId);
 }
-
