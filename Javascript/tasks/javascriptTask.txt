@@ -1,3 +1,3 @@
 This file will be updated whenever a new task is recieved:
 
-No pending tasks.
+Create example for different document object methords
