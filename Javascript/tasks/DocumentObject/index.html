@@ -15,38 +15,50 @@
 <body>
     <script src="index.js"></script>
     <h1>Hello</h1>
-    <p>This is a web page designed to create the examples for document object and it's methods.</p>
+    This is a web page designed to create the examples for document object and it's methods.
     <h3>Document object</h3>
-    <p>When an HTML document is loaded into a web browser, it becomes a <b>document object</b>. <br>
+    When an HTML document is loaded into a web browser, it becomes a <b>document object</b>. <br>
         The <b>document object</b> is the root node of the HTML document. <br>
         The <b>document object</b> is a property of the window object. <br>
         The <b>document object</b> is accessed with:<br>
         <code>window.document</code> or just <code>document</code><br><br>
         Click the button below to get the current <b>document object</b> in the console.<br>
-    </p>
     <button id="doc" onclick="showDoc()" >Document object</button>
 
     <h3>Document Object Methods</h3>
     <ul type="circle">
-        <li><button id="docTag" onclick="showDocElementByTag()" >.getElementByTagName()</button>
-            <p>The <code>.getElementByTagName()</code> method returns a collection of all elements with a specified tag name.</p>
+        <li>
+            <p>The <code>.getElementByTagName()</code> method returns a collection of all elements with a specified tag name.<br>
+            Click the button below to get all the occurence of <code><<!---->p></code> tag from the current document in the console and change their background colour.</p>
+            <button id="docTag" onclick="showDocElementByTag()" >.getElementByTagName()</button>
         </li>
-        <li><button id="docClass" onclick="showDocElementByClass()" >.getElimentByClassName()</button>
-            <p class="example">The <code>.getElementByClassName()</code> method returns a collection of elements with a specified class name(s).</p>
+        <li>
+            <p class="example">The <code>.getElementByClassName()</code> method returns a collection of elements with a specified class name(s).<br>
+            Click the button below to get all the occurence of <b>"example"</b> class from the current document in the console and change their text colour.</p>
+            <button id="docClass" onclick="showDocElementByClass()" >.getElimentByClassName()</button>
         </li>
-        <li><button id="docId" onclick="showDocElementById()" >.getElimentById()</button>
+        <li>
             <p id="text" class="example" >The <code>.getElimentById()</code> method returns an element with a specified value or <code>null</code> if the element does not exist.<br>
             It is one of the most common methods in the HTML DOM.<br>
-            It is used almost every time you want to read or edit an HTML element..</p>
+            It is used almost every time you want to read or edit an HTML element..<br>
+            Click the button below to get the occurence of element with id : <b>"text"</b> from the current document in the console and change their background and text colour.</p>
+            <button id="docId" onclick="showDocElementById()" >.getElimentById()</button>
         </li>
-        <li><button id="docId" onclick="showDocElementByName()" >.getElimentByName()</button>
-            <p id="text1" class="example" name="description">The <code>.getElimentByName()</code> method returns the <b>first</b> element that matches based on id, classes, types, attributes, values of attributes etc..</p>
+        <li>
+            <p id="text1" class="example" name="description">The <code>.getElimentsByName()</code> method returns all the element of specified name.<br>
+            Unlike <i>"id"</i> which is unique for any element, <i>"name"</i> can be same between multiple elements.<br>
+            Click the button below to get all the occurence of <b>"description"</b> elements from the current document in the console and change their text size.</p>
+            <button id="docId" onclick="showDocElementsByName()" >.getElimentsByName()</button>
         </li>
-        <li><button id="docQuery" onclick="showDocquerySelector()" >.querySelector()</button>
-            <p id="text2" class="example" name="description">The <code>.querySelector()</code> method returns the <b>first</b> element that matches based on id, classes, types, attributes, values of attributes etc..</p>
+        <li>
+            <p id="text2" class="example" name="description">The <code>.querySelector()</code> method returns the <b>first</b> element that matches based on id, classes, types, attributes, values of attributes etc..<br>
+            Click the button below to get all the first occurence of elements with <code><<!---->p></code> tag, <b>"example"</b> class and <b>"text2"</b> id from the current document in the console and change their font family, background colour and text colour respectively .</p>
+            <button id="docQuery" onclick="showDocquerySelector()" >.querySelector()</button>
         </li>
-        <li><button id="docQueryAll" onclick="showDocquerySelectorAll()" >.querySelectorAll()</button>
-            <p id="text3" class="example" name="description">The <code>.querySelectorAll()</code> method returns <b>all</b> the elements that matches based on id, classes, types, attributes, values of attributes etc..</p>
+        <li>
+            <p id="text3" class="example" name="description">The <code>.querySelectorAll()</code> method returns <b>all</b> the elements that matches based on id, classes, types, attributes, values of attributes etc..<br>
+            Click the button below to get all the occurence of elements with <code><<!---->button></code> tag, <b>"example"</b> class and <b>"text3"</b> id from the current document in the console and change their background colour, text colour and font family respectively .</p>
+            <button id="docQueryAll" onclick="showDocquerySelectorAll()" >.querySelectorAll()</button>    
         </li>
     </ul>
 </body>
