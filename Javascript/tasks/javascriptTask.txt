@@ -1,5 +1,5 @@
 This file will be updated whenever a new task is recieved:
 
 Create example for different document object methods -> Completed
-Create example for different DOM events -> Completed
+Create example for different DOM events 
 
