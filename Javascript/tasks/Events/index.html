@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling in Javascript</title>
+    <style>
+        th,td {
+            border-bottom: 2px solid #8a8787;
+            border-left: 2px solid #8a8787;
+            padding: 5px;
+            text-align: left;
+            /*color: #82368f;*/
+        }
+        th {
+            background-color: #a6cd4b;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+        code {
+            background-color: #bba665;
+            border-radius: 2px;
+            font-size: 110%;
+        }
+    </style>
+</head>
+<body>
+    <script src="index.js"></script>
+    <h1>Event Handling in Javascript</h1>
+    <p>
+        An <b>Event</b> is the change in the state of an object.<br> 
+        There are various events in <b>HTML</b> which represents that some activity is performed by the user or by the browser.<br>
+        The process of reacting over the events is called <b>Event Handling</b>.<br>
+        The <b>Javascript</b> handles the <b>HTML</b> events via <b>Event Handlers</b>.<br><br>
+        The following table shows some of the HTML events and their event handlers. <br>
+        These are also applied on the table as; 
+        <ul>
+            <li>The first column has <b>mouseover</b>, <b>mouseout</b> and <b>click</b> events.</li>
+            <li>The second column has <b>mousedown</b> and <b>mouseup</b> events.</li>
+            <li>Only the first cell in the third column has <b>mousemove</b> event.</li>
+        </ul>
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Event</th><th>Event Handler</th><th>Discription</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="events" onclick="clickevent(this)" onmouseover="mouseoverevent(this)" onmouseout="mouseoutevent(this)">click</td>
+                <td onmousedown="mousedownevent(this)" onmouseup="mouseupevent(this)"><code>onclick()</code></td>
+                <td onmousemove="mousemoveevent(this)">When mouse click on an element</td>
+            </tr>
+            <tr>
+                <td class="events" onclick="clickevent(this)" onmouseover="mouseoverevent(this)" onmouseout="mouseoutevent(this)">mouseover</td>
+                <td onmousedown="mousedownevent(this)" onmouseup="mouseupevent(this)"><code>onmouseover()</code></td>
+                <td>When the cursor of the mouse comes over the element</td>
+            </tr>
+            <tr>
+                <td class="events" onclick="clickevent(this)" onmouseover="mouseoverevent(this)" onmouseout="mouseoutevent(this)">mouseout</td>
+                <td onmousedown="mousedownevent(this)" onmouseup="mouseupevent(this)"><code>onmouseout()</code></td>
+                <td>When the cursor of the mouse leaves an element</td>
+            </tr>
+            <tr>
+                <td class="events" onclick="clickevent(this)" onmouseover="mouseoverevent(this)" onmouseout="mouseoutevent(this)">mousedown</td>
+                <td onmousedown="mousedownevent(this)" onmouseup="mouseupevent(this)"><code>onmousedown()</code></td>
+                <td>When the mouse button is pressed over the element</td>
+            </tr>
+            <tr>
+                <td class="events" onclick="clickevent(this)" onmouseover="mouseoverevent(this)" onmouseout="mouseoutevent(this)">mouseup</td>
+                <td onmousedown="mousedownevent(this)" onmouseup="mouseupevent(this)"><code>onmouseup()</code></td>
+                <td>When the mouse button is released over the element</td>
+            </tr>
+            <tr>
+                <td class="events" onclick="clickevent(this)" onmouseover="mouseoverevent(this)" onmouseout="mouseoutevent(this)">mousemove</td>
+                <td onmousedown="mousedownevent(this)" onmouseup="mouseupevent(this)"><code>onmousemove()</code></td>
+                <td>When the mouse movement takes place.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
