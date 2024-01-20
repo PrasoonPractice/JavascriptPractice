@@ -1,0 +1,8 @@
+1995 ->all browsers are using different language for websites.
+	 >netscape communication developed netscaple browser and javascript.
+	 >this browser became very popular.
+	 >all browser companies now want javascript for their website development too
+	 >netscape refused to share javascript, as such companies started developing their own variation of it.
+	 >like in 1996, Microsoft developed Jscript for IE 3.0
+	 >ECMA international created a standerdiesd variation of javascript called ECMA Script using ECMA-262 Standerd.
+	 >ECMA Script is a subset of javascript which is used to build a standerdiesd javascript.
