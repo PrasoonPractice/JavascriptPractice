@@ -1,2 +1,2 @@
-# JavascriptPractice
-A personal repository to use while practicing Javascript. 
+# ProgrammingPractice
+A personal repository to use while practicing Programming. 
