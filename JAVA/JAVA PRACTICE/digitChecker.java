@@ -30,9 +30,10 @@ public class digitChecker {
         System.out.print("\nEnter a number: ");
         long number = scanner.nextLong();
         
-        System.out.print("\nEnter a digit to check: ");
+        System.out.print("\nEnter a digit to check (0-9) : ");
         int digit = Character.getNumericValue(scanner.next().charAt(0));
-        
+        //digit is <10 && >= 0
+        //testing pending
         ConcreteDigitChecker digitChecker = new ConcreteDigitChecker();
         
         digitChecker.checkDigitOccurrence(number, digit);
